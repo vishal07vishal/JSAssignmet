@@ -1,3 +1,6 @@
+                             🙂Function🙂
+
+
 //1
 //Create one function with zero parameter having a console statement;
 function hello() {
