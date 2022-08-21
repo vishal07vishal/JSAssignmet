@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Domque.css">
+</head>
+<body>
+  <!-- Q4 -->
+  <h1 id="hellow">hellow</h1>
+  <!-- Q5 -->
+  <div class="card">
+      <div class="cards"></div>
+      <div class="cards"></div>
+      <div class="cards"></div>
+  </div>
+  <button class="btn">change direction</button>
+  <!-- Q7 -->
+  <h1 id="head">hellow</h1>
+  <!-- Q8 -->
+  <h1 id="heading">hellow World</h1>
+  <button id="btn2">Change Text</button>
+  <!-- Q10 -->
+  <div>
+    <select name="" onchange="yearChange()" id="yearSelect">
+    <option value="select">select year</option>
+    <option value="2015-2016">2015-2016</option>
+    <option value="2016-2017">2016-2017</option>
+    <option value="2017-2018">2017-2018</option>
+    <option value="2018-2019">2018-2019</option>
+    <option value="2019-2020">2019-2020</option>
+    <option value="2020-2021">2020-2021</option>
+    <option value="2021-2022">2021-2022</option>
+    </select>
+
+    <p class="year"> selected year:<span id="year"></span></p>
+  </div>
+
+
+
+  <form action="./Domque.html" class="form">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="name" required><br><br>
+    <label for="email">Email:</label>
+    <input oninput="emailCheck()" type="email" name="email" id="email" placeholder="@email.com" required>
+    <span id="emailcheck" class="check" >domain should be prepbytes.com.</span><br><br>
+    <label for="phoneno">Phone No:</label>
+    <input oninput="numberCheck()" type="number" name="phoneno" id="phoneno" placeholder="Contact No." required>
+    <span class="check" id="digitcheck">number should have10 digits.</span>
+    <span class="check" id="startcheck">number start with 91. </span><br><br>
+    <label for="byear">Birth Year:</label>
+    <input oninput="yearCheck()" type="number" name="byear" id="byear" placeholder="birth year" required>
+    <span class="check" id="byearcheck">birth year should be > 1995.</span><br><br>
+    <input type="submit" name="submit" id="submit">
+</form>
+
+
+    <script src="./Domque.js"></script>
+</body>
+</html>
